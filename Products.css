@@ -1,0 +1,89 @@
+/* Products.css */
+
+
+.product-container {
+  display: grid;
+  grid-gap: 20px;
+  background-color: #f1eaea;
+  padding: 20px;
+ 
+}
+
+.product-image {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin-left: 180px;
+}
+
+.product-image img {
+  width: 100%; /* Ensure images fill their container */
+  max-width: 200px; /* Set a maximum width for consistency */
+  height: auto; /* Maintain aspect ratio */
+  
+}
+
+.product-details {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 0px;
+  width: 800px;
+  height: 300px;
+}
+
+.product-details h2 {
+  font-size: 30px;
+  margin-top: 0;
+  color: rgb(0, 0, 0);
+}
+
+.product-details p {
+  margin: 5px 0;
+  color: #ff0000;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.product-details h6{
+  margin: 5px 0;
+  font-size: 1.3rem;
+  color: rgb(138, 98, 115);
+}
+.product-details .sty {
+  display: flex;
+  justify-content: left;
+  margin-left: 600px;
+  padding-top: 10px;
+}
+
+.product-details button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-details button:hover {
+  background-color: #0056b3;
+}
+.sty{
+  margin-top: 8px;
+  margin-left: 1200px;
+}
+
+/* Media query for responsiveness */
+@media screen and (min-width: 768px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

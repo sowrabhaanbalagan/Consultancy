@@ -1,0 +1,75 @@
+/* Common styles */
+.cont {
+  margin: 20px;
+  padding: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(https://www.edencottageyarns.co.uk/cdn/shop/articles/AUG_0848_1280x500_crop_center.JPG?v=1525348408);
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+  text-align: center;
+}
+.container {
+  max-width: 100%;
+  margin: 50px 20px; /* Adjust margin for smaller screens */
+  background: rgb(250, 249, 249);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.183);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.signup-image {
+  width: 100%; /* Adjust the width to fill the container */
+  max-width: 600px; /* Set a maximum width */
+  height: auto;
+  margin-right: 50px;
+}
+
+.form-container {
+  max-width: 400px;
+  margin-left: 20px; /* Adjust margin for smaller screens */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 50px; /* Center the container on larger screens */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+}

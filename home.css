@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.image-container {
+  position: relative; 
+  top: 70px; 
+  width: 100%;
+  height: calc(100vh - 70px); 
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: rgb(255, 107, 107); 
+  font-size: 3.3vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  z-index: 10; 
+  text-shadow: 3px 3px 0px rgb(239, 239, 239);
+}
+
+.button{
+  text-align: center;
+  margin-top: 450px;
+}
+
+.spacer {
+  margin-right: 5vw; 
+  padding-left: 0px;
+}
+
+.space {
+  margin-right: 5vw; 
+  padding-left: 3vw; 
+}
+
+.overlay {
+  position: absolute;
+  top: 65%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: rgb(255, 255, 255); 
+  font-size: 1.7vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  z-index: 100; 
+}
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+
+  margin-bottom: 1vw;
+}
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  padding-top: 1vw;
+  
+}
+
+.images,
+.images1 {
+  flex: 1;
+  overflow: hidden;
+
+}
+
+.images img,
+.images1 img {
+  width: 100%; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 1vw;
+  padding-right: 2vw;
+}
+
+.texts,
+.text1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center text horizontally */
+  padding-left: 2vw;
+  opacity: 0; /* Initially hide text */
+  transition: opacity 0.9s ease; /* Add transition for smooth appearance */
+}
+.text-visible {
+  opacity: 1; /* Show text when scrolled */
+}
+.texts h2 {
+  font-size: 2.1vw; /* Adjust font size */
+  font-weight: bold;
+  margin-right: 3.5vw;
+  font-family: 'Montserrat', sans-serif;
+}
+.text1 h2{
+  font-size: 2.1vw; /* Adjust font size */
+  font-weight: bold;
+  margin-top: 2.5vw;
+  margin-right: 3.5vw;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.texts p{
+  font-size: 1.3vw; /* Adjust font size */
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+.text1 p {
+  font-size: 1.3vw; /* Adjust font size */
+  line-height: 1.5;
+  margin-top: 1vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .containers,
+  .container1 {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .texts,
+  .text1,
+  .images,
+  .images1 {
+    width: 100%; /* Full width */
+  }
+
+  .texts,
+  .text1 {
+    padding: 2vw; /* Adjust padding */
+  }
+
+  .images,
+  .images1 {
+    padding: 0; /* Remove padding */
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5vw; /* Adjust margin */
+}
+
+.left-icons,
+.right-icons {
+  display: flex;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-right: 2vw; /* Adjust margin */
+}
+
+.icon {
+  margin-right: 1vw; /* Adjust margin */
+}
+
+.h4 p,
+.h4 h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.h4 h1 {
+  font-weight: bold;
+  font-size: 2.5vw; /* Adjust font size */
+  padding-top: 2vw; /* Adjust padding */
+}
+
+.h4 p {
+  font-size: 1.5vw; /* Adjust font size */
+  margin-top: 2vw; /* Adjust margin */
+}
+
+.footer {
+  background-color: #f9f3f3;
+  color: #fff;
+  padding-top: 3vw; /* Adjust padding */
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1vw;
+  color: rgb(155, 69, 52);
+}
+
+.footer-right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 1vw; /* Adjust margin */
+}
+
+.footer-bottom {
+  padding-top: 1.5vw;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1.2vw;
+
+}
+
+.foot {
+  width: 90%; /* Adjust width */
+  max-width: 100%;
+  padding: 0 5vw; /* Adjust padding */
+}
+.icons {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensure it behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  padding: 0 2vw; /* Adjust padding as needed */
+}
+
+.vision-mission-purpose{
+  text-align: center;
+}
+.offer{
+  text-align: center;
+  margin-top: 20px;
+}
+.offer h3{
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: crimson;
+}
+.cen{
+  text-align: center;
+  margin-bottom: 30vh;
+  font-size: 60px;
+}

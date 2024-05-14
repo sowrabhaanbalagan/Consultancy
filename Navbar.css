@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+h1{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+}
+
+.navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding: 1rem;
+    height: 90px;
+    z-index: 1000;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  .navbar-logo {
+    flex: 1; 
+    display: flex;
+    align-items: center; 
+  }
+  
+  .navbar-logo img {
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 6px
+  }
+  
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-item {
+    padding: 0 1rem;
+    font-size: 18px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    position: relative;
+    font-weight: bolder;
+    
+  }
+  
+  
+  .navbar-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #f74012;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-item:hover::after {
+    width: 100%;
+  }
+  
+  .menu-button {
+    background-color: transparent;
+    color: #fffcfc;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+  }
+ 
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+      display: none; /* Hide the menu by default */
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      padding-top: 10px;
+    }
+  
+    .navbar-menu.active {
+      display: flex; /* Display the menu when active */
+    }
+  
+    .menu-button {
+      display: block; /* Show the menu button */
+    }
+  }
+  
+  .contact-bg{
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(https://www.edencottageyarns.co.uk/cdn/shop/articles/AUG_0848_1280x500_crop_center.JPG?v=1525348408);
+    background-position: 100% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 20px;
+  
+}
+.contact-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: #f7327a;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+  
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: #f7327a;
+    border-radius: 50%;
+}
+.text{
+    font-weight: bold;
+    opacity: 0.9;
+}
+.contact-bg .text{
+    margin: 1.6rem 0;
+    font-weight: bold;
+}
+.contact-body{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+}
+.contact-info{
+    margin: rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #f7327a;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+.contact-form{
+    padding: 2rem 0;
+    border-top: 1px solid #c7c7c7;
+}
+.contact-form form{
+    padding-bottom: 1rem;
+}
+.form-control{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+.send-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: #f7327a;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.send-btn:hover{
+    opacity: 0.8;
+}
+.contact-form > div img{
+    width: 85%;
+}
+.contact-form > div{
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-footer{
+    padding: 2rem 0;
+    background: #000;
+}
+.contact-footer h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+.social-links a:hover{
+    color: #f7327a;
+    border-color: #f7327a;
+}
+.bg1{
+  background-color:whitesmoke;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px){
+    .contact-bg .text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .contact-bg .text{
+        width: 50%;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.about-bg{
+    height: 35vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(https://plus.unsplash.com/premium_photo-1664299852788-5a24db0d7e05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGV4dGlsZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-position: 100% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 20px;
+  
+}
+.about-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.about-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    
+}
+
+
+.para{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center text horizontally */
+  padding-left: 2vw;
+  
+}
+
+.para h2 {
+  font-size: 2.1vw; /* Adjust font size */
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 3.5vw;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.para p{
+  font-size: 1.3vw; /* Adjust font size */
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+.para p b{
+    color: #b33f3f;
+}
+.bga{
+    background-image: url(abo1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bga1{
+    background-image: url(https://omaxcotspin.com/img/knitted-fabrics.webp);
+  background-size: cover;
+  background-position: center;
+}

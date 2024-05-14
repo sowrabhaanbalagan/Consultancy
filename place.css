@@ -1,0 +1,73 @@
+/* place.css */
+
+/* Form container */
+.place-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Form header */
+  .place-form-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form fields */
+  .place-form-field {
+    margin-bottom: 15px;
+  }
+  
+  /* Label styles */
+  .place-form-field label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Input styles */
+  .place-form-field input[type="text"],
+  .place-form-field input[type="email"],
+  .place-form-field input[type="number"],
+  .place-form-field select,
+  .place-form-field textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Add transition effect for better user experience */
+  }
+  
+  /* Select styles */
+  .place-form-field select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('https://cdn.jsdelivr.net/gh/arielrossanigo/arrow-selector-css/dist/arrow-selector.min.svg') no-repeat right center;
+    background-size: 20px;
+  }
+  
+  /* Button styles */
+  .place-form-field button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .place-form-field button:hover {
+    background-color: #0056b3;
+  }
+.bground{
+    background-image:url(order.jpg);
+  background-size: cover;
+  background-position: center;
+}  
